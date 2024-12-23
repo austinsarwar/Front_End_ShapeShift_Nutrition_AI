@@ -1,0 +1,24 @@
+.weight {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.height {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.highlight {
+  color: var(--secondary-color);
+}
+.body-info h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #f4f4f4;
+}
+label {
+  font-size: 14px;
+}

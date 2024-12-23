@@ -1,0 +1,9 @@
+.workout-slider {
+  margin-bottom: 20px;
+}
+
+.workout-slider .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}

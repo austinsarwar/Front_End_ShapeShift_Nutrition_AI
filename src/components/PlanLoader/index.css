@@ -1,0 +1,15 @@
+.loader-container h3 {
+  text-align: center;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  color: white;
+}
+
+.loader-container h3.fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.loader-container h3.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}

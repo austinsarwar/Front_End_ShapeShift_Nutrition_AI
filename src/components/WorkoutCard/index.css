@@ -1,0 +1,82 @@
+#dumbbell {
+  width: 25px;
+  height: 25px;
+  margin: 0px;
+  padding-right: 18px;
+}
+
+.workout-card {
+  border-radius: 8px;
+  background-color: #ff7f50;
+  width: 90%;
+  max-width: 400px;
+  min-width: 200px;
+  overflow-y: auto;
+  height: 350px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.workout-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+}
+
+#workout-title {
+  text-align: left;
+
+  color: #ffffff;
+  flex: 1;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #ffffff;
+  color: #3d3d3d;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  z-index: 2;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 2px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.subheading {
+  background-color: #525252;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1rem;
+}

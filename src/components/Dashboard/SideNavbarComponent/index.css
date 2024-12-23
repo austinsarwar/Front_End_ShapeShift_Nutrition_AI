@@ -1,0 +1,96 @@
+.sidenav-container {
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  width: 14rem;
+  height: calc(100% - 5rem);
+  background-color: #4a4a4a;
+  padding: 1.5rem;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  border-right: 2px solid #ccc;
+  overflow-y: auto;
+}
+
+.sidenav-header {
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.arrow {
+  font-size: 0.7em;
+}
+
+.sidenav-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidenav-item {
+  margin: 1rem 0;
+  transition: background-color 0.3s;
+}
+
+.sidenav-item a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: block;
+  position: relative;
+}
+
+.sidenav-item a::after {
+  content: "🡢";
+  position: absolute;
+  right: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateX(5px);
+}
+
+.sidenav-item a:hover {
+  background-color: #5a5a5a;
+  color: #ffffff;
+}
+
+.sidenav-item a:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.collapsible {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.collapsible-content {
+  padding: 0.5rem 0;
+}
+
+.sidenav-list h2 {
+  color: #ffffff;
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.sidenav-list h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.sidenav-list h2:hover::after {
+  transform: scaleX(1);
+}
